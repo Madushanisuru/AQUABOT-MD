@@ -3,3 +3,14 @@ build:
       worker: Dockerfile
 run:
    worker: npm start
+access:
+  -a, --app=app        (required) app to run command against
+  -r, --remote=remote  git remote of app to use
+  --json               output in json format
+  
+  heroku access: add EMAIL
+
+OPTIONS
+  -a, --app=app                  (required) app to run command against
+  -p, --permissions=permissions  list of permissions comma separated
+  -r, --remote=remote            git remote of app to use
